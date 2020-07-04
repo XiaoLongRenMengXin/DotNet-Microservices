@@ -29,7 +29,7 @@ namespace Api {
 
             services.AddSwaggerGen (c => {
                 c.SwaggerDoc ("v1", new OpenApiInfo { Title = "应用程序接口文档", Version = "v1" });
-                // c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "WebApilication.xml"), true);
+                c.IncludeXmlComments (Path.Combine (AppContext.BaseDirectory, "Api.xml"), true);
             });
         }
 
